@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/vetessy-husvet/static/css/main.8475dfa1.chunk.css",
+    "main.js": "/vetessy-husvet/static/js/main.e3ba02c1.chunk.js",
+    "main.js.map": "/vetessy-husvet/static/js/main.e3ba02c1.chunk.js.map",
+    "runtime-main.js": "/vetessy-husvet/static/js/runtime-main.00ce1adc.js",
+    "runtime-main.js.map": "/vetessy-husvet/static/js/runtime-main.00ce1adc.js.map",
+    "static/css/2.de424728.chunk.css": "/vetessy-husvet/static/css/2.de424728.chunk.css",
+    "static/js/2.9267fd14.chunk.js": "/vetessy-husvet/static/js/2.9267fd14.chunk.js",
+    "static/js/2.9267fd14.chunk.js.map": "/vetessy-husvet/static/js/2.9267fd14.chunk.js.map",
+    "index.html": "/vetessy-husvet/index.html",
+    "precache-manifest.4c8c07fb4c0177795d040eccdc5202dd.js": "/vetessy-husvet/precache-manifest.4c8c07fb4c0177795d040eccdc5202dd.js",
+    "service-worker.js": "/vetessy-husvet/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/vetessy-husvet/static/css/2.de424728.chunk.css.map",
+    "static/css/main.8475dfa1.chunk.css.map": "/vetessy-husvet/static/css/main.8475dfa1.chunk.css.map",
+    "static/js/2.9267fd14.chunk.js.LICENSE.txt": "/vetessy-husvet/static/js/2.9267fd14.chunk.js.LICENSE.txt",
+    "static/media/dvg logo.svg": "/vetessy-husvet/static/media/dvg logo.730bdef8.svg",
+    "static/media/footer_nyakkendő.svg": "/vetessy-husvet/static/media/footer_nyakkendő.36606a99.svg",
+    "static/media/liliom_hatter.png": "/vetessy-husvet/static/media/liliom_hatter.e9e50633.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.00ce1adc.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.9267fd14.chunk.js",
+    "static/css/main.8475dfa1.chunk.css",
+    "static/js/main.e3ba02c1.chunk.js"
+  ]
+}
