@@ -1,5 +1,8 @@
-export default interface Page {
+export interface Homepage {
   title: string;
-  quote: string;
   youtubeLink: string;
+  backgroundLink: string;
+}
+export interface Page extends Homepage {
+  quote: string;
 }
