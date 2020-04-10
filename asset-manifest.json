@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/vetessy-husvet/static/css/main.8475dfa1.chunk.css",
-    "main.js": "/vetessy-husvet/static/js/main.fb38d373.chunk.js",
-    "main.js.map": "/vetessy-husvet/static/js/main.fb38d373.chunk.js.map",
+    "main.js": "/vetessy-husvet/static/js/main.0c45b709.chunk.js",
+    "main.js.map": "/vetessy-husvet/static/js/main.0c45b709.chunk.js.map",
     "runtime-main.js": "/vetessy-husvet/static/js/runtime-main.00ce1adc.js",
     "runtime-main.js.map": "/vetessy-husvet/static/js/runtime-main.00ce1adc.js.map",
     "static/css/2.de424728.chunk.css": "/vetessy-husvet/static/css/2.de424728.chunk.css",
     "static/js/2.33f25a72.chunk.js": "/vetessy-husvet/static/js/2.33f25a72.chunk.js",
     "static/js/2.33f25a72.chunk.js.map": "/vetessy-husvet/static/js/2.33f25a72.chunk.js.map",
     "index.html": "/vetessy-husvet/index.html",
-    "precache-manifest.72236b101c608aa2cacb88b5aa99d71e.js": "/vetessy-husvet/precache-manifest.72236b101c608aa2cacb88b5aa99d71e.js",
+    "precache-manifest.7ff4f2317a4a6498f83ddcfe515f6a6d.js": "/vetessy-husvet/precache-manifest.7ff4f2317a4a6498f83ddcfe515f6a6d.js",
     "service-worker.js": "/vetessy-husvet/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/vetessy-husvet/static/css/2.de424728.chunk.css.map",
     "static/css/main.8475dfa1.chunk.css.map": "/vetessy-husvet/static/css/main.8475dfa1.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.de424728.chunk.css",
     "static/js/2.33f25a72.chunk.js",
     "static/css/main.8475dfa1.chunk.css",
-    "static/js/main.fb38d373.chunk.js"
+    "static/js/main.0c45b709.chunk.js"
   ]
 }

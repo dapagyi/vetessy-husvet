@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bdada32724a91ef57589a1a77fe016e9",
+    "revision": "7dde5211eb330ea30e85501d9404d8f2",
     "url": "/vetessy-husvet/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vetessy-husvet/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "760d08a76040ae8906f4",
+    "revision": "0bf580cfe22f34143317",
     "url": "/vetessy-husvet/static/css/main.8475dfa1.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vetessy-husvet/static/js/2.33f25a72.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "760d08a76040ae8906f4",
-    "url": "/vetessy-husvet/static/js/main.fb38d373.chunk.js"
+    "revision": "0bf580cfe22f34143317",
+    "url": "/vetessy-husvet/static/js/main.0c45b709.chunk.js"
   },
   {
     "revision": "dbee0c97504d732e9bc2",
