@@ -99,8 +99,8 @@ const PageComponent: React.FC<{ page: Page | Homepage }> = props => {
             </Grid>
           </div>
         </Container>
+        <Footer />
       </main>
-      <Footer />
     </>
   );
 };

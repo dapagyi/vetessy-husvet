@@ -8,9 +8,12 @@ import footernyakkendo from './zöld_nyakkendő.svg';
 
 const useStyles = makeStyles(theme => ({
   footer: {
-    backgroundColor: theme.palette.background.paper,
+    // backgroundColor: theme.palette.background.paper,
+    marginTop: theme.spacing(3),
     padding: theme.spacing(1, 3, 1, 3),
     justifyContent: 'center',
+    // position: 'relative',
+    // bottom: '0',
   },
   nyakkendo: {
     width: `${121}px`,

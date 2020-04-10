@@ -14,7 +14,12 @@ import PageComponent from './components/Page/Page';
 import { Homepage, Page } from './interfaces/IPage';
 
 const App: React.FC = () => {
-  const [homepage, setHomepage] = React.useState<Homepage>({ title: '', youtubeLink: '', backgroundLink: '' });
+  const [homepage, setHomepage] = React.useState<Homepage>({
+    title: '',
+    textColor: 'white',
+    youtubeLink: '',
+    backgroundLink: '',
+  });
   const [pages, setPages] = React.useState<Page[]>([]);
 
   const SPREADSHEET_ID = '1kLj4IdexWi3NdQFmjR8Lc88DV3MfZtwMiuLspNRf8gw';
@@ -31,7 +36,7 @@ const App: React.FC = () => {
       }[];
     }
 
-    const query = `select A, B, C, D where A is not null offset 1`;
+    const query = `select A, B, C, D, E where A is not null offset 1`;
     fetch(
       `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tq=${window.encodeURIComponent(
         query,
@@ -44,18 +49,21 @@ const App: React.FC = () => {
         const r = regExp.exec(result);
         if (r != null) {
           const json = JSON.parse(r[0] || '{ table: { rows: [] } }');
+          console.log(json);
           setHomepage({
             title: json.table.rows[0].c[0].v,
-            youtubeLink: json.table.rows[0].c[2].v,
-            backgroundLink: json.table.rows[0].c[3].v,
+            textColor: json.table.rows[0].c[2].v,
+            youtubeLink: json.table.rows[0].c[3].v,
+            backgroundLink: json.table.rows[0].c[4].v,
           });
           // setVideoLink(json.table.rows[0].c[1].v);
           const pages: Page[] = json.table.rows.slice(1).map(
             (row: Row): Page => ({
               title: row.c[0].v,
               quote: row.c[1].v,
-              youtubeLink: row.c[2].v,
-              backgroundLink: row.c[3].v,
+              textColor: row.c[2].v,
+              youtubeLink: row.c[3].v,
+              backgroundLink: row.c[4].v,
             }),
           );
           // console.log(pages);
@@ -76,14 +84,12 @@ const App: React.FC = () => {
         <Switch>
           <Route exact path="/">
             <PageComponent page={homepage}>
-              <Typography variant="h5" align="left" color="textSecondary">
+              <Typography variant="h5" align="left" color="textSecondary" style={{ paddingLeft: '5rem' }}>
                 {pages.map((page, index) => {
                   return (
                     <div key={index}>
                       <Link
-                        style={{
-                          color: 'green',
-                        }}
+                        style={{ color: homepage.textColor }}
                         to={`/${page.title
                           .normalize('NFD')
                           .replace(/[\u0300-\u036f]/g, '')
@@ -111,10 +117,18 @@ const App: React.FC = () => {
                   .replace(/\s/g, '-')}`}
               >
                 <PageComponent page={page}>
-                  <Typography variant="body1" gutterBottom align="center">
-                    {page.quote}
-                    <br />
-                  </Typography>
+                  {page.quote.split('[enter]').map((block, index) => (
+                    <Typography
+                      key={index}
+                      style={{ color: page.textColor, fontSize: '18px' }}
+                      variant="body1"
+                      gutterBottom
+                      align="justify"
+                    >
+                      {block}
+                      {/* <br /> */}
+                    </Typography>
+                  ))}
                 </PageComponent>
               </Route>
             );
