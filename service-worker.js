@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/vetessy-husvet/precache-manifest.4c8c07fb4c0177795d040eccdc5202dd.js"
+  "/vetessy-husvet/precache-manifest.72236b101c608aa2cacb88b5aa99d71e.js"
 );
 
 self.addEventListener('message', (event) => {
