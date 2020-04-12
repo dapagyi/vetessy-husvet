@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7dde5211eb330ea30e85501d9404d8f2",
+    "revision": "6cd4f794a40b4c7f71c637f4333622cc",
     "url": "/vetessy-husvet/index.html"
   },
   {
